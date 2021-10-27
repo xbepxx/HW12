@@ -37,21 +37,21 @@ namespace HW12
         public static double L;
         public static void Sq(double r)
         {
-            S = Math.PI* Math.Pow(r, 2) / 4;
+            S = Math.PI * Math.Pow(r, 2) / 4;
             S = Math.Round(S, 2);
             Console.WriteLine("Площадь круга равна: {0}", S);
             //Console.ReadKey();
         }
         public static void Len(double r)
         {
-            L = 2* Math.PI * r;
+            L = 2 * Math.PI * r;
             L = Math.Round(L, 2);
             Console.WriteLine("Длина круга равна: {0}", L);
             //Console.ReadKey();
         }
         public static void InOut(double r, double x0, double x1, double y0, double y1)
         {
-            if (Math.Pow((x1-x0),2)+ Math.Pow((x1 - x0), 2) <= Math.Pow(r, 2))
+            if (Math.Pow((x1 - x0), 2) + Math.Pow((x1 - x0), 2) <= Math.Pow(r, 2))
             {
                 Console.WriteLine("Точка находится внутри круга");
             }
@@ -60,7 +60,5 @@ namespace HW12
                 Console.WriteLine("Точка находится за пределами круга");
             }
         }
-
-
     }
 }
