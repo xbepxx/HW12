@@ -51,7 +51,7 @@ namespace HW12
         }
         public static void InOut(double r, double x0, double x1, double y0, double y1)
         {
-            if (Math.Pow((x1 - x0), 2) + Math.Pow((x1 - x0), 2) <= Math.Pow(r, 2))
+            if (Math.Pow((x1 - x0), 2) + Math.Pow((y1 - y0), 2) <= Math.Pow(r, 2))
             {
                 Console.WriteLine("Точка находится внутри круга");
             }
